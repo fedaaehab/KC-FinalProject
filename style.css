@@ -1,0 +1,30 @@
+*{
+scroll-behavior: smooth; 
+margin: 0;  
+padding: 0; 
+box-sizing: border-box;
+font-family: 'Mirza', cursive;
+text-decoration: none;
+scroll-padding-top: 2rem;
+}
+
+body{
+background-color:#F5F3F4 ;
+
+}
+.header{
+    color:#161A1D ; 
+background-color:#F5F3F4;
+width:100% ;
+top: 0; 
+right: 0; 
+position: fixed;
+z-index: 999;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 100px ;
+height: 50px;
+padding: 5px;
+/**box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+transition: o.5s;
