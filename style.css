@@ -3,7 +3,7 @@ scroll-behavior: smooth;
 margin: 0;  
 padding: 0; 
 box-sizing: border-box;
-font-family: 'Mirza', cursive;
+font-family: 'Tajawal', sans-serif;
 text-decoration: none;
 scroll-padding-top: 2rem;
 }
@@ -55,24 +55,44 @@ transition: o.5s;
     }
     
 .text-box{
-margin-top: 160px;
+margin-top: 210px;
+
 
 }
 .text-box h1{
- font-size: 5.0rem; 
+ font-size: 4.0rem; 
  color:#99D3D3ff ; 
- margin-bottom: 50px;
+ margin-bottom: 30px;
  margin-right: 70px; 
+
 }
 .text-box p{
 color: #2b2c28;
-font-size:2.0rem ;
-margin-right: 70px; 
+font-size:1.5rem ;
+margin-right: 70px;
+
 }
 .user-box{
-   width: 400px;
+   width: 550px;
     position: absolute;
-    top: 160px;
+    top: 110px;
     left: 0;
     size: 50%;
+   
+}
+.banner{
+max-height: 100vh;
+max-width: 100vh; 
+align-items: center;
+margin-bottom: 20rem;  
+}
+
+
+.cards{
+    display: flex;
+   background-color:#99D3D3ff ;
+    font-size: larger;
+    max-height: 100vh;
+    max-width:100vh ;
+   
 }
