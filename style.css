@@ -89,10 +89,57 @@ margin-bottom: 20rem;
 
 
 .cards{
+    padding:100px 0 ;
+
+}
+.max-width{
+
+ max-width: 1300px;
+ padding: 0 45px; 
+ margin: auto;  
+}
+.max-width h2{
+ text-align: center;
+ position: relative; 
+ color:#99D3D3ff  ;
+ font-size: 50px;
+ margin-bottom: 60px;
+ padding-bottom: 20px;  
+}
+.max-width h2::after{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    bottom: 0;
+    background:#99D3D3ff ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content{
     display: flex;
-   background-color:#99D3D3ff ;
-    font-size: larger;
-    max-height: 100vh;
-    max-width:100vh ;
-   
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+ padding: 50px 25px; 
+ width: calc(26%-20px);
+ border-radius: 6px;
+background:#f4f0e8;
+ text-align: center;
+ user-select: none;
+ font-size: 25px;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+.card:hover{
+background-color:#99D3D3ff ;
+
+}
+.box{
+ transition: all 0.3s ease;   
+}
+.card:hover .box{
+    transform: scale(1.05);
 }
