@@ -48,6 +48,7 @@
           padding-bottom: 20px 0px;
         align-items: center;
         justify-content: center;
+        transition: 0.5s;
         }
         
         .navigation a:hover{
@@ -84,9 +85,27 @@
     max-height: 100vh;
     max-width: 100vh; 
     align-items: center;
-    margin-bottom: 20rem;  
+    margin-bottom: 10rem; 
+    
+    }
+    .banner h1{
+        font-size:70px;
+        width:0ch;
+        white-space: nowrap;
+        overflow: hidden;
+        animation:text 6s steps(20) infinite;
+        
     }
     
+    @keyframes text{
+        0%{
+            width:0ch;
+        }
+        50%{
+            width:19ch;
+        }
+    }
+  
     
     .cards{
         padding:100px 0 ;
@@ -116,6 +135,7 @@
         left: 50%;
         transform: translateX(-50%);
     }
+   
     
     .content{
         display: flex;
@@ -142,5 +162,13 @@
     }
     .card:hover .box{
         transform: scale(1.05);
+    }
+
+    /**الأقسام**/
+
+    #one{
+margin-top: 210px;
+margin-bottom: 10px;
+
     }
     
