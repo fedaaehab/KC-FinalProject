@@ -90,15 +90,21 @@
                 
     
                     .card1{
-                    height: 290px; 
+                    height: 270px; 
                     width: 350px;  
                     margin: 0 20px;
                     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                     text-align: center;
-                    background-color:#F5F3F4 ;
+                    background-color:white ;
+                    transition: 0.4s;
+                    }
+
+                    .card1:hover{
+                        height: 470px;
+                        
                     }
                     .card1 .top-text{
-                        padding: 5px;
+                        padding: 10px;
                     }
                     .card1 .top-text .name{
                         font-size: 25px;
@@ -121,8 +127,40 @@
                         align-items: center;  
                         justify-content: space-between;
                         place-items: center;
+                       
                     }
                     .card1 .bottom-text{
-
+                       padding: 0 20px  10px 20px;
+                       margin-top: 5px;
+                       background-color:white;
+                       opacity: 0;
+                       visibility: hidden;
+                       transition: 0.1s;
+                      
                     }
+                    .card1:hover .bottom-text{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .card1 .bottom-text .paragraph{
+                        text-align: justify;
+                    }
+                    .card1 .bottom-text .btn{
+                        margin: 10px 0;
+                        text-align: right;
+                    }
+                    .card1 .bottom-text .btn a{
+                        background-color:#99D3D3ff ;
+                        color: #F5F3F4;
+                        padding: 5px 8px;
+                        border-radius: 3px;
+                        display: inline-flex;
+                        transition: 0.2s;
+                    }
+                    .card1 .bottom-text .btn a:hover{
+                        transform: scale(0.9);
+                    }
+                    
+                        
+                    
 
