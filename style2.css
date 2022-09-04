@@ -1,0 +1,128 @@
+
+     *{
+        scroll-behavior: smooth; 
+        margin: 0;  
+        padding: 0; 
+        box-sizing: border-box;
+        font-family: 'Tajawal', sans-serif;
+        text-decoration: none;
+        scroll-padding-top: 2rem;
+        }
+        
+        body{
+        background-color:#F5F3F4 ;
+    
+        
+        }
+       
+          
+            .header{
+                color:#161A1D ; 
+            background-color:#F5F3F4;
+            width:100% ;
+            top: 0; 
+            right: 0; 
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px ;
+            height: 50px;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            transition: o.5s;
+            }
+            
+            .left{
+            
+                padding: 10px 25px ;
+                display: flex; 
+                align-items: center;
+                margin: 15px;
+                
+                
+               }
+               
+               .navigation a{
+                   color: #99D3D3ff;
+                   font-size: 1.5em;
+                   margin: 15px;
+                   padding-left: 30px;
+                  padding-bottom: 20px 0px;
+                align-items: center;
+                justify-content: center;
+                transition: 0.5s;
+                }
+                
+                .navigation a:hover{
+                    color: #5390d9;
+                }
+
+                .max-width h2{
+                    text-align: center;
+                    position: relative; 
+                    color:#99D3D3ff  ;
+                    font-size: 50px;
+                    margin-bottom: 60px;
+                    padding-bottom: 20px;  
+                   }
+                   .max-width h2::after{
+                       content: '';
+                       position: absolute;
+                       width: 300px;
+                       height: 3px;
+                       bottom: 0;
+                       background:#99D3D3ff ;
+                       left: 50%;
+                       transform: translateX(-50%);
+                   }
+
+
+
+                /**الأقسام**/
+
+                #one{
+                    margin-top: 110px;
+                    margin-bottom: auto;
+                        }
+                    
+                
+    
+                    .card1{
+                    height: 290px; 
+                    width: 350px;  
+                    margin: 0 20px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    text-align: center;
+                    background-color:#F5F3F4 ;
+                    }
+                    .card1 .top-text{
+                        padding: 5px;
+                    }
+                    .card1 .top-text .name{
+                        font-size: 25px;
+                        font-weight: 600;
+                        color:#99D3D3ff ;
+                    }
+
+                    .card1  .img{
+                        height: 200px;
+                        width: 100%;
+
+                    }
+                    .card1  .img img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    .container{
+                        display: flex; 
+                        align-items: center;  
+                        justify-content: space-between;
+                        place-items: center;
+                    }
+                    .card1 .bottom-text{
+
+                    }
+
