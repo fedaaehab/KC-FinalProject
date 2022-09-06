@@ -86,6 +86,7 @@
             .img-container img{
                 width: 500px;
                 height: 500px;
+                object-fit: cover;
                 
                     animation-name: flo;
                     animation-duration: 5s;
@@ -97,7 +98,7 @@
                   }
                   @keyframes flo{
                     50%{
-                      transform: translateY(40px);
+                      transform: translateY(15px);
                     }
                   }
             
@@ -105,14 +106,27 @@
                 flex: 1;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 flex-direction: column;
             }
             .text-container h1{
             font-size: 50px;  
             color:#99D3D3ff ;  
             padding: 10px 0px;
+            overflow: hidden;
+            animation:text 8s steps(20) 1;
+            
+        }
+        
+        @keyframes text{
+            0%{
+                width:0ch;
             }
+            50%{
+                width:19ch;
+            }
+        }
+            
             .text-container p{
                 font-size: 22px;
                 padding: 10px 0px;
@@ -125,5 +139,39 @@
               background-color:#99D3D3ff ;
                 color: #F5F3F4;
              font-size: 12px;
+             transition: 0.3s all ease-in-out;
              
             }
+            .text-container a:hover{
+                background-color: transparent;
+                color: #99D3D3ff;
+            }
+            @media screen and (max-width:1600px){
+                .about-container{
+                    width: 90%;
+                }
+            .img-container img{
+                width: 400px;
+                height: 400px;
+            }
+            .text-container h1{
+                font-size: 50px;
+            }
+               }
+               @media screen and (max-width:1100px){
+                .about-container{
+                    flex-direction: column;
+                }
+                .text-container{
+                    align-items: center;
+                }
+               }
+               @media screen and (max-width:550px){
+                .img-container img{
+                    width: 300px;
+                    height: 300px;
+                }
+                .text-container p{
+                    font-size: 20px;
+                }
+               }
