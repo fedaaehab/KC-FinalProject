@@ -44,6 +44,7 @@
             display: flex; 
             align-items: center;
             margin: 15px;
+
             
             
            }
@@ -85,7 +86,21 @@
             .img-container img{
                 width: 500px;
                 height: 500px;
-            }
+                
+                    animation-name: flo;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    position: center;
+                    bottom: 70px;
+                    left:20px;
+                  
+                  }
+                  @keyframes flo{
+                    50%{
+                      transform: translateY(40px);
+                    }
+                  }
+            
             .text-container{
                 flex: 1;
                 display: flex;
@@ -104,4 +119,11 @@
             }
             .text-container a{
                 padding: 12px;
+                border: 2px solid #99D3D3ff;
+                border-radius: 3px;
+                margin-top: 30px;
+              background-color:#99D3D3ff ;
+                color: #F5F3F4;
+             font-size: 12px;
+             
             }
